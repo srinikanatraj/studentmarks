@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Marks Table</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #43cea2, #185a9d);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        max-width: 1000px;
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+        text-align: center;
+        color: #4a148c;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    th {
+        background: linear-gradient(90deg, #ff512f, #dd2476);
+        color: white;
+        padding: 14px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    td {
+        padding: 12px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    tr:nth-child(odd) td {
+        background-color: #f1f8ff;
+    }
+
+    tr:nth-child(even) td {
+        background-color: #fff0f6;
+    }
+
+    tr:hover td {
+        background-color: #d0ebff !important;
+        transition: 0.3s;
+    }
+
+    .total {
+        font-weight: bold;
+        color: #1d3557;
+    }
+
+    .topper {
+        background-color: #caffbf !important;
+        color: #006400;
+        font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+        th, td {
+            font-size: 12px;
+            padding: 8px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>🌟 Student Marks Report 🌟</h2>
+
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>English</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Rahul</td>
+            <td>85</td>
+            <td>78</td>
+            <td>88</td>
+            <td class="total">251</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Anjali</td>
+            <td>90</td>
+            <td>92</td>
+            <td>89</td>
+            <td class="total">271</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Arun</td>
+            <td>75</td>
+            <td>80</td>
+            <td>70</td>
+            <td class="total">225</td>
+        </tr>
+
+        <tr>
+            <td>104</td>
+            <td>Priya</td>
+            <td>88</td>
+            <td>84</td>
+            <td>90</td>
+            <td class="total">262</td>
+        </tr>
+
+        <tr class="topper">
+            <td>105</td>
+            <td>Karthikeyan</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td class="total">300</td>
+        </tr>
+
+        <tr>
+            <td>106</td>
+            <td>Sneha</td>
+            <td>82</td>
+            <td>79</td>
+            <td>85</td>
+            <td class="total">246</td>
+        </tr>
+
+    </table>
+</div>
+
+</body>
+</html>
